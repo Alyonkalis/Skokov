@@ -397,10 +397,6 @@ img {
     background-color: #fe504f;
 }
 
-.slides .slick-arrow {
-    display: none !important;
-}
-
 /*team*/
 
 .flex {
@@ -1160,6 +1156,11 @@ img {
         width: 100%;
     }
 
+    .block-new__img--right img {
+        width: 100%;
+        height: auto;
+    }
+
 
     .block-new__block-text--left {
         order: 0;
@@ -1167,5 +1168,18 @@ img {
 
     .block-new__block-text {
         min-height: 230px;
+    }
+
+    .button-wrapper {
+        justify-content: center; 
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .society__list {
+        justify-content: center;
     }
 }

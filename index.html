@@ -8,6 +8,9 @@
 	<!-- style -->
 	<link rel="stylesheet" href="css/main.css">
 
+	<!-- fancybox -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
 	<!-- slick style -->
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
@@ -205,7 +208,7 @@
 								</div>	
 							</div>
 						</div>
-											<div>
+						<div>
 							<div class="client-slider">
 								<div>
 									<img src="img/client1.png" alt="Oracle" width="185" height="185">
@@ -237,6 +240,7 @@
 				<h3 class="team__title">Our team</h3>
 
 				<div class="flex">
+					
 					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 						<div class="flipper team__item">
 							<div class="front">
@@ -424,9 +428,7 @@
 		<!-- video -->
 
 		<section class="video">
-			<a href="#" class="video__button">
-				<span class="visually-hidden">Кнопка запуска видео</span>
-			</a>
+			<a data-fancybox="gallery" class="video__button" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"></a>
 			<div class="video__wrapper-text container">
 				<h2 class="video__title">We blend the strategic with creative</h2>
 				<p class="video__description">
@@ -549,10 +551,12 @@
 
 	<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/slick.js"></script>
     <script type="text/javascript">
       $('.slides').slick({
          dots: true,
+         arrows: false,
          infinite: true,
          speed: 300,
          slidesToShow: 1,
