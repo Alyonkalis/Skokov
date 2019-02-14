@@ -10,7 +10,8 @@ buttonMenu.addEventListener("click", function(){        //слушаем кли�
         menu.classList.remove('open'),               //удаляем класс open
         body.classList.remove('overflow');          //удаляем класс overflow у body
     } else {                                        //если нет класса open
-        menu.classList.add('open'),                 //добавляем класс open 
+        menu.classList.add('open'),
+        buttonMenu.classList.add('mobile-menu__close'),                 //добавляем класс open 
         body.classList.add('overflow'),
         menuBg.classList.add('show');              //добавляем класс overflow для body
     }
@@ -27,8 +28,6 @@ closeMenu.addEventListener("click", function(){      //слушаем клик �
         menuBg.classList.add('show');               //добавляем класс overflow для body
     }
 });
-
-
 
 
 

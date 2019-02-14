@@ -211,15 +211,10 @@ img {
 }
 
 .mobile-menu__close {
-    position: absolute;
-
-    width: 18px;
-    height: 18px;
-    right: 30px;
-    top: 20px;
+    
 }
 
-.mobile-menu__close::after,
+/*.mobile-menu__close::after,
 .mobile-menu__close::before {
     content: "";
     position: absolute;
@@ -249,7 +244,7 @@ img {
 .mobile-menu__close:active::before,
 .mobile-menu__close:active::after {
     background-color: #e54948;
-}
+}*/
 
 .mobile-menu__list {
     display: flex;
