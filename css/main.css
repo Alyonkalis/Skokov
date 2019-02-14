@@ -72,10 +72,6 @@ img {
     position: relative;
 }
 
-.header__container {
-    position: relative; /*===============*/
-}
-
 .header__navigation {
     display: flex;
     align-items: center;
@@ -140,7 +136,7 @@ img {
 
     transition: all 0.3s ease;
 
-    position: absolute;
+    position: fixed;
     z-index: 10; /*======================*/
 }
 
@@ -203,7 +199,7 @@ img {
     z-index: 9;
 
     position: fixed;
-    /*transform: translate(-100%,0);*/
+    transform: translate(-100%,0);
     transition: all 0.5s ease;
     top: 0;
     left: 0;
@@ -1221,6 +1217,16 @@ img {
     }
 
     .menu-button {
+        display: block;
+    }
+
+    .open {
+        transform: translate(0, 0);
+        transition: all .5s ease;
+        overflow-y: auto;
+    }
+
+    .show {
         display: block;
     }
 
