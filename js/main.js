@@ -31,4 +31,12 @@ $('button').on('click', function(){
   $('body').toggleClass('open');
 });
 
+$(function() {
+    $(document).ready(function() {
+        $(".mobile-menu__list").on("click","a", function (event) {
+            $('body').removeClass('open');
+        });
+    });
+})
+
 
