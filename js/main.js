@@ -1,6 +1,3 @@
-var body = document.querySelector('body');
-
-
 //плавная прокрутка по якорям
 $(document).ready(function(){ 
     //слушаем клик по тегу а в блоке .site-navigation 
@@ -12,10 +9,6 @@ $(document).ready(function(){
 	    //анимируем переход на расстояние - top за 1500 мс 
 	    $('body,html').animate({scrollTop: top}, 1500); 
     });
-});
-
-//плавная прокрутка по якорям
-$(document).ready(function(){ 
     //слушаем клик по тегу а в блоке .site-navigation 
     $(".mobile-menu__list").on("click","a", function (event) { 
 	    //забираем идентификатор блока из атрибута href 
@@ -25,18 +18,12 @@ $(document).ready(function(){
 	    //анимируем переход на расстояние - top за 1500 мс 
 	    $('body,html').animate({scrollTop: top}, 1500); 
     });
-});
-
-$('button').on('click', function(){
-  $('body').toggleClass('open');
-});
-
-$(function() {
-    $(document).ready(function() {
-        $(".mobile-menu__list").on("click","a", function (event) {
+    $(".mobile-menu__list").on("click","a", function (event) {
             $('body').removeClass('open');
         });
-    });
-})
+});
 
+$('.menu-button').on('click', function(){
+  $('body').toggleClass('open');
+});
 
